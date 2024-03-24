@@ -19,7 +19,7 @@ export const MuiSnackbar = () => {
     return (
         <>
          <Button onClick={() => setOpen(true)}>Submit</Button>
-         <Snackbar
+         {/*<Snackbar
          message='Form submitted successfully!'
          autoHideDuration={4000} 
           open={open}
@@ -28,7 +28,12 @@ export const MuiSnackbar = () => {
             vertical: 'bottom',
             horizontal: 'center',
           }}
-          />
+        />*/}
+        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+         <SnackbarAlert onClose={handleClose} severity="success">
+            Form submitted successfully!
+         </SnackbarAlert>
+        </Snackbar>
         </>
     )
 }
