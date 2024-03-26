@@ -30,6 +30,7 @@ import { MuiDialog } from './components/MuiDialog';
 import { MuiProgress } from './components/MuiProgress';
 import { MuiSkeleton } from './components/MuiSkeleton';
 import { MuiLoadingButton } from './components/MuiLoadingButton';
+import { MuiDateTimePicker } from './components/MuiDateTimePicker';
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
       <MuiProgress />
       <MuiSkeleton />
       <MuiLoadingButton />
+      <MuiDateTimePicker />
     </div>
   );
 }
