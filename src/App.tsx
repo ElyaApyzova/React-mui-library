@@ -31,9 +31,12 @@ import { MuiProgress } from './components/MuiProgress';
 import { MuiSkeleton } from './components/MuiSkeleton';
 import { MuiLoadingButton } from './components/MuiLoadingButton';
 import { MuiDateTimePicker } from './components/MuiDateTimePicker';
+import { LocalizationProvider } from '@mui/lab';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
 
 function App() {
   return (
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
     <div className="App">
       <MuiTypography />
       <MuiButton />
@@ -68,6 +71,7 @@ function App() {
       <MuiLoadingButton />
       <MuiDateTimePicker />
     </div>
+    </LocalizationProvider>
   );
 }
 
