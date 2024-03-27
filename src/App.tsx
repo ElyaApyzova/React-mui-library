@@ -30,9 +30,10 @@ import { MuiDialog } from './components/MuiDialog';
 import { MuiProgress } from './components/MuiProgress';
 import { MuiSkeleton } from './components/MuiSkeleton';
 import { MuiLoadingButton } from './components/MuiLoadingButton';
-import { MuiDateTimePicker } from './components/MuiDateTimePicker';
 import { LocalizationProvider } from '@mui/lab';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import { MuiDateTimePicker } from './components/MuiDateTimePicker';
+import { MuiDateRangePicker } from './components/MuiDateRangePicker';
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
       <MuiSkeleton />
       <MuiLoadingButton />
       <MuiDateTimePicker />
+      <MuiDateRangePicker />
     </div>
     </LocalizationProvider>
   );
