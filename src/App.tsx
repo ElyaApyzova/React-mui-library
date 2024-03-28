@@ -30,14 +30,14 @@ import { MuiDialog } from './components/MuiDialog';
 import { MuiProgress } from './components/MuiProgress';
 import { MuiSkeleton } from './components/MuiSkeleton';
 import { MuiLoadingButton } from './components/MuiLoadingButton';
-import { LocalizationProvider } from '@mui/lab';
-import AdapterDateFns from '@mui/lab/AdapterDateFns';
+/*import { LocalizationProvider } from '@mui/lab';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';*/
 /*import { MuiDateTimePicker } from './components/MuiDateTimePicker';*/
-import { MuiDateRangePicker } from './components/MuiDateRangePicker';
-
+/*import { MuiDateRangePicker } from './components/MuiDateRangePicker';*/
+import { MuiTabs } from './components/MuiTabs';
 function App() {
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFns}>
+    /*<LocalizationProvider dateAdapter={AdapterDateFns}>*/
     <div className="App">
       <MuiTypography />
       <MuiButton />
@@ -70,10 +70,12 @@ function App() {
       <MuiProgress />
       <MuiSkeleton />
       <MuiLoadingButton />
+      <MuiTabs />
       {/*<MuiDateTimePicker />*/}
-      <MuiDateRangePicker />
+      {/*<MuiDateRangePicker />*/}
+    
+    {/*</LocalizationProvider>*/}
     </div>
-    </LocalizationProvider>
   );
 }
 
