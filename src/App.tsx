@@ -35,6 +35,7 @@ import AdapterDateFns from '@mui/lab/AdapterDateFns';*/
 /*import { MuiDateTimePicker } from './components/MuiDateTimePicker';*/
 /*import { MuiDateRangePicker } from './components/MuiDateRangePicker';*/
 import { MuiTabs } from './components/MuiTabs';
+import { MuiTimeline }   from './components/MuiTimeline'
 function App() {
   return (
     /*<LocalizationProvider dateAdapter={AdapterDateFns}>*/
@@ -75,6 +76,8 @@ function App() {
       {/*<MuiDateRangePicker />*/}
     
     {/*</LocalizationProvider>*/}
+
+    <MuiTimeline />
     </div>
   );
 }
