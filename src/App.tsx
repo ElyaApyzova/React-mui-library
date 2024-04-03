@@ -38,6 +38,7 @@ import AdapterDateFns from '@mui/lab/AdapterDateFns';*/
 import { MuiTabs } from './components/MuiTabs';
 import { MuiTimeline }   from './components/MuiTimeline'
 import { MuiMasonry } from './components/MuiMasonry';
+import { MuiResponsiveness } from './components/MuiResponsiveness';
 
 const theme = createTheme({
   status: {
@@ -45,9 +46,13 @@ const theme = createTheme({
   },
   palette: {
     secondary: {
-      main: colors.orange[500]
-    }
-  }
+      main: colors.orange[500],
+    },
+    neutral: {
+      main: colors.grey[500],
+      darker: colors.grey[700]
+    },
+  },
 })
 function App() {
   return (
@@ -93,6 +98,7 @@ function App() {
 
     <MuiTimeline />
     <MuiMasonry />
+    <MuiResponsiveness />
     </div>
     </ThemeProvider>
   );
